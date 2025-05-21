@@ -35,4 +35,4 @@ services:
       - "80:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./matomo-js:/usr/share/nginx/html/js:ro
+      - ./nginx/js:/usr/share/nginx/html/js:ro
