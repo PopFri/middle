@@ -8,6 +8,8 @@ services:
     build: ../BackEnd
     ports:
       - "8081:8081"
+    volumes:
+      - ../BackEnd/.env:/app/.env
   matomo:
     image: matomo:latest
     ports:
